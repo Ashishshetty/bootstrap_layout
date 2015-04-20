@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>LayoutTask</title>
+  <%= stylesheet_link_tag    'layout3', media: 'all', 'data-turbolinks-track' => true %>
+  <%= javascript_include_tag 'layout3', 'data-turbolinks-track' => true %>
+  <%= csrf_meta_tags %>
+</head>
+<body>
+<header>
+  Header
+  <a href="/">layout 1</a>
+  <a href="/page2">layout 2</a>
+  <a href="/page3">layout 3</a>
+  <a href="/page4">layout 4</a>
+</header>
+<div id="container">
+  <%= yield %>
+</div>
+<footer>
+  Footer
+</footer>
+
+</body>
+</html>
